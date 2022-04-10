@@ -20,7 +20,7 @@ options {
 			}
         stage('Start docker containers') {
             steps {
-                dir('kafka_conf'){
+                dir('kafka-example/kafka_conf'){
                     sh 'docker-compose up -d'
                 }
             }
