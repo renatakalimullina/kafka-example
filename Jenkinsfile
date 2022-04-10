@@ -15,9 +15,9 @@ options {
             steps {
                 cleanWs()
                 sh 'git clone https://github.com/renatakalimullina/kafka-example'
-                sh 'ls -la'
                 sh 'cd kafka-example'
-		sh 'cd kafka_conf'
+                sh 'ls -la'
+				sh 'cd kafka_conf'
                 }
 			}
         stage('Start docker containers') {
